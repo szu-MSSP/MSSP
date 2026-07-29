@@ -20,7 +20,9 @@ The proposed algorithms are implemented in Python (3.11.13) using NumPy (2.3.4) 
 
 All experiments are conducted on a server equipped with four Intel Xeon E7-4830 CPUs (56 cores at 2.0 GHz) and 2 TB of main memory.
 
-## 1. CUR-SL2-AA and $T^2$-SL2-AA
+## Algorithms
+
+### 1. CUR-SL2-AA and $T^2$-SL2-AA
 ```bash
 # args[1]: graph path
 # args[2]: algorithm name, CUR or T2
@@ -42,7 +44,7 @@ python MSSP.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-## 2. CUR-SL2-SA and $T^2$-SL2-SA
+### 2. CUR-SL2-SA and $T^2$-SL2-SA
 ```bash
 python SL2-SA.py \
   <graph_path> \
@@ -55,7 +57,7 @@ python SL2-SA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-## 3. CUR-PL2-SA and $T^2$-PL2-SA
+### 3. CUR-PL2-SA and $T^2$-PL2-SA
 ```bash
 python PL2-SA.py \
   <graph_path> \
@@ -68,7 +70,7 @@ python PL2-SA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-## 4. CUR-PL2-VA and $T^2$-PL2-VA
+### 4. CUR-PL2-VA and $T^2$-PL2-VA
 ```bash
 # args[1]: graph path
 # args[2]: algorithm name, CUR or T2
@@ -92,7 +94,7 @@ python PL2-VA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-## 5. CUR-PD-VA and $T^2$-PD-VA
+### 5. CUR-PD-VA and $T^2$-PD-VA
 ```bash
 python PD-VA.py \
   <graph_path> \
@@ -106,7 +108,7 @@ python PD-VA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-## 6. Ground-truth
+### 6. Ground-truth
 
 ```bash
 # args[1]: graph path
