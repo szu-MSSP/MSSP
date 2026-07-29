@@ -16,6 +16,11 @@ The datasets can be downloaded from:
 | CUR-PL2-VA<br>$T^2$-PL2-VA | Partition-based | $\ell_2^2$-based | Vertex-level |
 | CUR-PD-VA<br>$T^2$-PD-VA | Partition-based | Degree-aware | Vertex-level |
 
+## Environment
+
+The proposed algorithms are implemented in Python (3.11.13) using NumPy (2.3.4) and SciPy (1.17.1), with parallel execution provided by Python's built-in `threading` module. Ground-truth PageRank values are computed using NetworKit (11.2.1). 
+All experiments are conducted on a server equipped with four Intel Xeon E7-4830 CPUs (56 cores at 2.0 GHz) and 2 TB of main memory.
+
 ## 1. CUR-SL2-AA and $T^2$-SL2-AA
 ```bash
 # args[1]: graph path
@@ -100,4 +105,15 @@ python PD-VA.py \
   <num_threads> \
   <lambda> \
   <sampling_ratio_1> <sampling_ratio_2> ...
+```
+
+## 6. Ground Truth
+
+```bash
+# args[1]: graph path
+# args[2]: output path
+
+python Groundtruth.py \
+  <graph_path> \
+  <output_path>
 ```
