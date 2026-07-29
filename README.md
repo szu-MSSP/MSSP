@@ -2,9 +2,7 @@
 
 We evaluate the performance of our proposed algorithms and competitors on five real-world graph datasets: Gowalla, DBLP, UKDomain07, UKDomain06, and Papers100M.
 
-The datasets can be downloaded from:
-
-[Dataset download link]
+The datasets can be downloaded from:[Dataset download link]
 
 ## Configurations of the MSSP variants
 
@@ -18,7 +16,8 @@ The datasets can be downloaded from:
 
 ## Environment
 
-The proposed algorithms are implemented in Python (3.11.13) using NumPy (2.3.4) and SciPy (1.17.1), with parallel execution provided by Python's built-in `threading` module. Ground-truth PageRank values are computed using NetworKit (11.2.1). 
+The proposed algorithms are implemented in Python (3.11.13) using NumPy (2.3.4) and SciPy (1.17.1), with parallel execution provided by Python's built-in threading module. Ground-truth PageRank values are computed using NetworKit (11.2.1).
+
 All experiments are conducted on a server equipped with four Intel Xeon E7-4830 CPUs (56 cores at 2.0 GHz) and 2 TB of main memory.
 
 ## 1. CUR-SL2-AA and $T^2$-SL2-AA
@@ -107,7 +106,7 @@ python PD-VA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-## 6. Ground Truth
+## 6. Ground-truth
 
 ```bash
 # args[1]: graph path
