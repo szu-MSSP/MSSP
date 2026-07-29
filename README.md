@@ -25,7 +25,7 @@ The datasets can be downloaded from:
 # args[5]: transition matrix and node-ID cache directory
 # args[6]: sampling probability cache directory
 # args[7]: number of threads
-# args[8:]: sampling ratios, e.g., 0.0001 ... 0.001
+# args[8]: sampling ratios, e.g., 0.0001 ... 0.001
 
 python MSSP.py \
   <graph_path> \
@@ -66,15 +66,15 @@ python PL2-SA.py \
 
 ## 4. CUR-PL2-VA and $T^2$-PL2-VA
 ```bash
-args[1]: graph path
-args[2]: algorithm name, CUR or T2
-args[3]: output directory
-args[4]: number of nodes in the dataset
-args[5]: transition matrix and node-ID cache directory
-args[6]: sampling probability cache directory
-args[7]: number of threads
-args[8]: lambda, e.g., 0.9
-args[9:]: sampling ratios, e.g., 0.0001 ... 0.001
+# args[1]: graph path
+# args[2]: algorithm name, CUR or T2
+# args[3]: output directory
+# args[4]: number of nodes in the dataset
+# args[5]: transition matrix and node-ID cache directory
+# args[6]: sampling probability cache directory
+# args[7]: number of threads
+# args[8]: lambda, e.g., 0.9
+# args[9]: sampling ratios, e.g., 0.0001 ... 0.001
 
 python PL2-VA.py \
   <graph_path> \
