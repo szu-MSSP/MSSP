@@ -9,9 +9,8 @@ The datasets can be downloaded from:[Dataset download link]
 | Variant | Sampling Pool | Sampling Distribution | Aggregation Strategy |
 |---|---|---|---|
 | CUR-SL2-AA<br>$T^2$-SL2-AA | Shared | $\ell_2^2$-based | Averaging |
-| CUR-SL2-SA<br>$T^2$-SL2-SA | Shared | $\ell_2^2$-based | Sample-level |
-| CUR-PL2-SA<br>$T^2$-PL2-SA | Partition-based | $\ell_2^2$-based | Sample-level |
-| CUR-PL2-VA<br>$T^2$-PL2-VA | Partition-based | $\ell_2^2$-based | Vertex-level |
+| CUR-PL2-AA<br>$T^2$-PL2-AA | Partition-based | $\ell_2^2$-based | Averaging |
+| CUR-PD-AA<br>$T^2$-PD-AA | Partition-based | Degree-aware | Averaging |
 | CUR-PD-VA<br>$T^2$-PD-VA | Partition-based | Degree-aware | Vertex-level |
 
 ## Environment
@@ -44,9 +43,9 @@ python MSSP.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-### 2. CUR-SL2-SA and $T^2$-SL2-SA
+### 2. CUR-PL2-AA and $T^2$-PL2-AA
 ```bash
-python SL2-SA.py \
+python PL2-AA.py \
   <graph_path> \
   <algorithm> \
   <output_dir> \
@@ -57,9 +56,9 @@ python SL2-SA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-### 3. CUR-PL2-SA and $T^2$-PL2-SA
+### 3. CUR-PD-AA and $T^2$-PD-AA
 ```bash
-python PL2-SA.py \
+python PD-AA.py \
   <graph_path> \
   <algorithm> \
   <output_dir> \
@@ -70,7 +69,7 @@ python PL2-SA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-### 4. CUR-PL2-VA and $T^2$-PL2-VA
+### 4. CUR-PD-VA and $T^2$-PD-VA
 ```bash
 # args[1]: graph path
 # args[2]: algorithm name, CUR or T2
@@ -82,19 +81,6 @@ python PL2-SA.py \
 # args[8]: lambda, e.g., 0.9
 # args[9]: sampling ratios, e.g., 0.0001 ... 0.001
 
-python PL2-VA.py \
-  <graph_path> \
-  <algorithm> \
-  <output_dir> \
-  <node_num> \
-  <cache_dir> \
-  <probability_dir> \
-  <num_threads> \
-  <lambda> \
-  <sampling_ratio_1> <sampling_ratio_2> ...
-```
-
-### 5. CUR-PD-VA and $T^2$-PD-VA
 ```bash
 python PD-VA.py \
   <graph_path> \
@@ -108,7 +94,7 @@ python PD-VA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-### 6. Ground-truth
+### 5. Ground-truth
 
 ```bash
 # args[1]: graph path
