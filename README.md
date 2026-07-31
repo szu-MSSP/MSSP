@@ -2,7 +2,7 @@
 
 We evaluate the performance of our proposed algorithms and competitors on five real-world graph datasets: Gowalla, DBLP, UKDomain07, UKDomain06, and Papers100M.
 
-The datasets can be downloaded from:[Dataset download link]
+The datasets can be downloaded from: [https://zenodo.org/records/21663651](https://zenodo.org/records/21663651).
 
 ## Configurations of the MSSP variants
 
