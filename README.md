@@ -65,7 +65,7 @@ python PL2-AA.py \
 # args[5]: transition matrix and node-ID cache directory
 # args[6]: sampling probability cache directory
 # args[7]: number of threads
-# args[8]: reliability parameter $\lambda$, e.g., 0.9
+# args[8]: reliability parameter, e.g., 0.9
 # args[9:]: sampling ratios, e.g., 0.0001 ... 0.001
 
 python PL2-VA.py \
