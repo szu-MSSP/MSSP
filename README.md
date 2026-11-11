@@ -10,7 +10,7 @@ The datasets can be downloaded from: [https://zenodo.org/records/21663651](https
 |---|---|---|---|
 | CUR-SL2-AA<br>$T^2$-SL2-AA | Shared | $\ell_2^2$-based | Averaging |
 | CUR-PL2-AA<br>$T^2$-PL2-AA | Partition-based | $\ell_2^2$-based | Averaging |
-| CUR-PL2-VA<br>$T^2$-PL2-VA | Partition-based | $\ell_2^2$-based | Vertex-level |
+| CUR-PD-AA<br>$T^2$-PD-AA | Partition-based | Degree-aware | Averaging |
 | CUR-PD-VA<br>$T^2$-PD-VA | Partition-based | Degree-aware | Vertex-level |
 
 ## Environment
@@ -56,7 +56,20 @@ python PL2-AA.py \
   <sampling_ratio_1> <sampling_ratio_2> ...
 ```
 
-### 3. CUR-PL2-VA and $T^2$-PL2-VA
+### 3. CUR-PD-AA and $T^2$-PD-AA
+```bash
+python PD-AA.py \
+  <graph_path> \
+  <algorithm> \
+  <output_dir> \
+  <node_num> \
+  <cache_dir> \
+  <probability_dir> \
+  <num_threads> \
+  <sampling_ratio_1> <sampling_ratio_2> ...
+```
+
+### 4. CUR-PD-VA and $T^2$-PD-VA
 ```bash
 # args[1]: graph path
 # args[2]: algorithm name, CUR or T2
@@ -68,20 +81,6 @@ python PL2-AA.py \
 # args[8]: reliability parameter, e.g., 0.9
 # args[9:]: sampling ratios, e.g., 0.0001 ... 0.001
 
-python PL2-VA.py \
-  <graph_path> \
-  <algorithm> \
-  <output_dir> \
-  <node_num> \
-  <cache_dir> \
-  <probability_dir> \
-  <num_threads> \
-  <reliability parameter> \
-  <sampling_ratio_1> <sampling_ratio_2> ...
-```
-
-### 4. CUR-PD-VA and $T^2$-PD-VA
-```bash
 python PD-VA.py \
   <graph_path> \
   <algorithm> \
